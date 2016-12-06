@@ -9,7 +9,8 @@ body {
 .jumbotron {
     height: 100%;
     padding: 25px;
-    background: url('https://hd.unsplash.com/photo-1472445059364-92ac5245e86d') no-repeat center center fixed;
+    font-family: Oswald;
+    background: url('img/peak-1245693_1920.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
