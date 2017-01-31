@@ -1,42 +1,126 @@
 body {
     height: 100vh;
+    background: url('img/woodscamp.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
+
+.navbar {
+    background-color: #08315d;
+    color: white;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    font-family: Black Ops One;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-nav>li>a  {
+    font-family: Arial;
+}
+
+.navbar-default .navbar-nav>li>a:hover  {
+    background-color: white;
+    color: #08315;
+}
 
 /*-------Landing-------*/
 
 .jumbotron {
     height: 100%;
-    padding: 25px;
+    /*padding: 25px;*/
     font-family: Oswald;
-    background: url('img/peak-1245693_1920.jpg') no-repeat center center fixed;
+    background: url('img/newpeak.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 15%;
     color: white;
     margin: 0;
+}
+
+#logo {
+    font-family: Black Ops One, sans-serif;
+    font-size: 2em;
 }
 
 /*-----Campgrounds-----*/
 
 .camps {
-    padding: 20px;
+    padding: 30px 50px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    position: relative;
+    top: 75px;
+}
+
+.camps h1 {
+    margin-top: 0;
+}
+
+.camps button {
+    background-color: #08315d;
+}
+
+.camps button:hover {
+    text-decoration: none;
+    color: #08315d;
+    background-color: white;
 }
 
 .camps a:hover {
-    text-decoration: none;
+     text-decoration: none;   
 }
 
 .campHeader {
-    margin-top: 50px;
     margin-bottom: 20px;
 }
 
+.camp-button {
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
 
+.camp-button:hover {
+    transform: scale(1.1);
+}
+
+.camp-button h4 {
+    background-color: #08315d;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    border-radius: 8px 8px 0 0;
+}
+
+.camp-button h4:hover {
+    text-decoration: none;
+}
+
+.camp-button img {
+    height: 150px;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#logo-sm {
+    font-family: Black Ops One;
+    color: #08315d;
+    font-size: 2em;
+}
 
 /*---------Add----------*/
 
@@ -68,14 +152,28 @@ body {
     padding: 20px;
 }
 
+.camp-show {
+    width: 75%;
+    margin: 0 auto;
+    color: black;
+}
+
 .caption-full {
     padding: 9px;
 }
 
 .campContainer {
     padding: 20px;
+    color: black;
 }
 
+.show a {
+    color: white;
+}
+
+.show a:hover {
+    text-decoration: none;
+}
 
 /*----------------------*/
 
@@ -92,6 +190,66 @@ body {
 
 
 /*----- Login -----*/
-.login {
-    padding: 60px;
+
+.container {
+    
+}
+
+.userform {
+    background-color: #e7e7e7;
+    margin: 0 auto;
+    border-radius: 8px;
+    /*border: 1px solid #d0d0d0;*/
+    padding: 0px;
+    position: relative;
+    top: 80px;
+    width: 500px;
+    text-align: center;
+}
+
+.userform h1 {
+    text-align: center;
+    background-color: #08315d;
+    margin-top: 0;
+    color: white;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.userform form {
+    padding: 30px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.userform-submit {
+    background-color: #08315d;
+    color: white;
+    margin: 0 auto;
+}
+
+.userform-submit:hover {
+    text-decoration: none;
+    color: #08315d;
+    background-color: white;
+    border: 1px solid #08315d;
+}
+
+.error {
+    /*margin-top: 40px;*/
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width : 767px) {
+    .camp-button {
+        margin-bottom: 20px;
+    }
 }

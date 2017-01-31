@@ -1,12 +1,20 @@
 <% include partials/header.ejs %>
 
-
-<h1>Sign Up</h1>
-
-<form action='/register' method='POST'>
-    <input type='text' name='username' placeholder='Username'>
-    <input type='password' name='password' placeholder='Password'>
-    <button>Sign Up</button>
-</form>
+<div class="container">
+    <div class="signup userform">
+        <h1>Sign Up</h1>
+        <form action='/register' method='POST'>
+            <div class="form-group">
+                <label for="signup-name">Username</label>
+                <input class="form-control" type='text' id="signup-name" name='username' placeholder='Username'>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input class="form-control" type='password' id="signup-password" name='password' placeholder='Password'>
+            </div>
+            <button class="userform-submit btn btn-lg">Submit</button>
+        </form>
+    </div>
+</div>
 
 <% include partials/footer.ejs %>

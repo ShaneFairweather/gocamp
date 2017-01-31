@@ -1,21 +1,21 @@
 <% include ../partials/header.ejs %>
 
 <div class='container camps'>
-
-  
   <div class='row'>
     <div class='col-md-8 campHeader'>
+        <h6><span id="logo-sm">GoCamp</span></h6>
         <h1>Campgrounds</h1>
         <a href='/campgrounds/new'><button class='btn btn-primary btn-lg'>Add new campground</button></a>
     </div>
   </div>
-  
   <div class='row'>
     <% campgrounds.forEach(function(camp) { %>
         <div class='col-md-3 col-sm-4'>
             <a href='/campgrounds/<%= camp._id %>'>
-            <h4> <%= camp.name %> </h4>
-            <img class="img-responsive" src="<%= camp.image %>">
+              <div class="camp-button">
+                <h4> <%= camp.name %> </h4>
+                <img class="img-responsive" src="<%= camp.image %>">
+              </div>
             </a>
         </div>
     <% }) %>
