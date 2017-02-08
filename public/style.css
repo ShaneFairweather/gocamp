@@ -55,6 +55,7 @@ body {
 #logo {
     font-family: Black Ops One, sans-serif;
     font-size: 2em;
+    color: #08315d;
 }
 
 /*-----Campgrounds-----*/
@@ -86,7 +87,7 @@ body {
 }
 
 .campHeader {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .camp-button {
@@ -251,5 +252,11 @@ body {
 @media screen and (max-width : 767px) {
     .camp-button {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width : 543px) {
+    .userform {
+        width: 90%;
     }
 }

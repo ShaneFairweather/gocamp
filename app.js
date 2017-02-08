@@ -16,8 +16,8 @@ var campgroundRoutes = require('./routes/campgrounds');
 var authRoutes = require('./routes/index');
 
 
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect('mongodb://smafair:la16kb24@ds127958.mlab.com:27958/gocamp');
+// mongoose.connect(process.env.DATABASEURL);
+mongoose.connect('mongodb://smafair:la16kb24@ds127958.mlab.com:27958/gocamp');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
