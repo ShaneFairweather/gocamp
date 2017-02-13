@@ -1,24 +1,18 @@
 <% include ../partials/header.ejs %>
 
-
-<div class='container newCamp'>
-
-    <h1>Add New Comment to <%= campground.name %></h1>
-    
-    <div class='row'>
-        <div class='add'>
-            <form action='/campgrounds/<%= campground._id %>/comments' method='POST'>
-                <div class='form-group'>
-                    <input class='form-control' type='text' name='comment[text]' placeholder='Add comment'/> 
-                </div>
-                <div class='form-group'>
-                    <button class='btn btn-primary btn-lg btn-block' id='addButton' type='submit'>Add</button>
-                </div>
-            </form>
-            <a href='/campgrounds'><button class='btn'>Back</button></a>
-        </div>
+<div class='container'>
+    <div class='userform newComment'>
+        <h1>Add New Comment to <%= campground.name %></h1>
+        <form action='/campgrounds/<%= campground._id %>/comments' method='POST'>
+            <div class='form-group'>
+                <input class='form-control' type='text' id="editCommentUsername" name='comment[text]' placeholder='Add comment' /> 
+            </div>
+            <button class='btn btn-primary btn-lg btn-block' id='addButton' type='submit'>Add</button>
+            <a href='/campgrounds'><button class='btn btn-sm backBtn'>Back</button></a>
+        </form>
     </div>
 </div>
 
 
 <% include ../partials/footer.ejs %>
+

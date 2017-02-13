@@ -7,7 +7,7 @@ body {
     background-size: cover;
 }
 
-a:selected {
+a:visited {
     color: white;
 }
 
@@ -18,6 +18,10 @@ a:selected {
     border-radius: 0;
     border: 0;
     font-family: Black Ops One;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
@@ -32,13 +36,30 @@ a:selected {
     font-family: Arial;
 }
 
+
+.navbar-default .navbar-nav>li>a:hover  {
+    background-color: white;
+    color: #08315d;
+}
+
+.navbar-nav>li>a:visited  {
+    color: white;
+}
+
 .navbar-nav>li>a:active  {
     color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover  {
-    background-color: white;
-    color: #08315;
+.navbar-nav>li>a:focus  {
+    color: white;
+}
+
+#linkContainer:active {
+    color: white;
+}
+
+button {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 /*-------Landing-------*/
@@ -72,6 +93,7 @@ a:selected {
     border-radius: 8px;
     position: relative;
     top: 75px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .camps h1 {
@@ -99,6 +121,8 @@ a:selected {
 .camp-button {
     text-align: center;
     transition: all .2s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .camp-button:hover {
@@ -132,7 +156,7 @@ a:selected {
 /*---------Add----------*/
 
 .newCamp {
-    background: url('https://hd.unsplash.com/photo-1444228250525-3d441b642d12');
+    background: url('img/hatchet.jpg');
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -147,10 +171,17 @@ a:selected {
 }
 
 .add {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
+.backBtn {
+    color: white;
+}
 
 /*------------Show--------*/
 
@@ -212,6 +243,7 @@ a:selected {
     top: 80px;
     width: 500px;
     text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .userform h1 {
@@ -254,6 +286,21 @@ a:selected {
     margin: 0 auto;
 }
 
+.thumbnail, .well {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.newComment h1 {
+    font-size: 1.7em;
+}
+
+.newComment button {
+    margin-bottom: 7px;
+}
+
+.editComment button {
+    margin-bottom: 7px;
+}
 
 @media screen and (max-width : 767px) {
     .camp-button {
